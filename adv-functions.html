@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Advanced Functions</title>
+  </head>
+  <body>
+    <script>
+      /*function greeting() {
+        console.log("hello");
+      }
+      greeting();
+
+      const num = 2;
+      const func1 = function () {
+        console / log("hello");
+      };
+
+      console.log(func1);
+      console.log(typeof func1);
+      func1();
+
+
+      const obj1 = {
+        num = 2, fun : function reeting() {
+        console.log("hello");
+      }
+      };
+      obj1.fun();
+
+      function display(param){
+        console.log(param);
+      }
+      display(2);
+
+      function run(param){
+        param();
+      }
+      run (function (){
+        console.log('hello4');
+      });*/
+
+      /*setTimeout(function () {
+        console.log("timeout");
+      }, 3000);
+
+      console.log("nextline");
+
+      setInterval(function () {
+        console.log("timeout");
+      }, 3000);
+
+      console.log("nextline2");
+      */
+
+      ["make dinner", "wash dishes", "watch yt"].forEach(function (
+        value,
+        index
+      ) {
+        if (value === "wash dishes") {
+          return;
+        }
+        console.log(value);
+        console.log(index);
+      });
+
+      const regfunc = function () {
+        console.log("hello");
+      };
+      const arrowfunc = () => {
+        console.log("hello");
+      };
+      arrowfunc();
+    </script>
+  </body>
+</html>

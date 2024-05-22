@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>dom projects</title>
+  </head>
+  <body>
+    <p>YouTube Subscribe Button</p>
+    <button onclick="Subscribe();" class="js-subs-button">Subscribe</button>
+    <p>Amazon Shipping Calculator</p>
+    <input
+      placeholder="Cost of order"
+      class="js-cost-input"
+      onkeydown=" handlecostkeydown(event);"
+    />
+    <button
+      onclick="
+    calctotal();
+    "
+    >
+      Calculate
+    </button>
+    <p class="js-total-cost"></p>
+
+    <script>
+      String(25);
+      console.log("25" - 5); //for -*/ it automatically converts them to string
+
+      /*window.document
+      window.console.log('');
+      window.alert*/
+
+      function handlecostkeydown(event) {
+        if ((event.key = "enter")) {
+          calctotal();
+        }
+      }
+
+      function calctotal() {
+        const inputEle = document.querySelector(".js-cost-input");
+        let cost = Number(inputEle.value);
+
+        if (cost < 40) {
+          cost = cost + 10;
+        }
+
+        document.querySelector(".js-total-cost").innerHTML = `$${cost}`;
+      }
+      function Subscribe() {
+        const butele = document.querySelector(".js-subs-button");
+
+        if (butele.innerText === "Subscribe") {
+          butele.innerHTML = "Subscribed";
+        } else {
+          butele.innerText = "Subscribe";
+        }
+      }
+    </script>
+  </body>
+</html>

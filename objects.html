@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      /*const prod = {
+        name: "socks",
+        price: 1090,
+      };
+      console.log(prod);
+      console.log(prod.name);
+
+      prod.name = "cotton socks";
+      console.log(prod);
+
+      prod.date = "1";
+      console.log(prod.date); //adding new prop
+
+      delete prod.date; //deleting
+      console.log(prod);*/
+      /*
+      const prod = {
+        name: "shirt",
+        ["del-time"]: "1 day",
+        rating: {
+          stars: 4.5,
+          count: 87,
+        },
+        fun: function func() {
+          console.log("function inside object");
+        },
+      };
+      console.log(prod);
+      console.log(prod.name);
+      console.log(prod["name"]); //used for prop that normally don't work w dot notation
+      //example
+      console.log(prod["del-time"]); // the - is termed as minus
+
+      console.log(prod.rating.stars);
+      prod.fun();
+
+      console.log(typeof console.log);
+
+      console.log(typeof JSON.stringify(prod));
+      const JSONstring = JSON.stringify(prod);
+      console.log(JSON.parse(JSONstring));
+      */
+
+      //AUTO BOXING
+      console.log("hello".length);
+      console.log("hello".toUpperCase());
+
+      const obj1 = {
+        message: "hello",
+      };
+      const obj2 = obj1;
+
+      obj1.message = "good job";
+      console.log(obj1);
+      console.log(obj2);
+
+      const obj3 = {
+        message: "good job",
+      };
+      console.log(obj3 === obj1);
+      console.log(obj2 === obj1);
+      const obj4 = {
+        message: "good job",
+        price: 799,
+      };
+      //  const message = obj4.message;
+      const { message, price } = obj4;
+      console.log(message);
+      console.log(price);
+
+      const obj5 = {
+        //message: message,
+        message,
+        /*method: function func1() {
+          console.log(method);
+        }*/
+        method() {
+          console.log("method");
+        },
+      };
+      console.log(obj5);
+      obj5.method();
+    </script>
+  </body>
+</html>
